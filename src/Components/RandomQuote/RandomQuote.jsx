@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./RandomQuote.css";
 import twitter from "../Assets/twitter.svg";
 import rotate from "../Assets/rotate.svg";
+import { customQuoteSources } from "./DataSources/customQuoteSources";
+import { trumpDataSource } from "./DataSources/trumpDataSource";
+import { typeFitDataSource } from "./DataSources/typeFitDataSource";
 
 export const RandomQuote = () => {
 	let quotes = [];
