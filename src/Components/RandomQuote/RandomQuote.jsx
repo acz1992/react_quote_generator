@@ -22,7 +22,7 @@ export const RandomQuote = () => {
 		author: "Johann Wolfgang von Goethe",
 	});
 
-	const shareTwitter = () => {
+	const tweetQuote = () => {
 		window.open(
 			`https://twitter.com/intent/tweet?text=${
 				quote.text
@@ -51,7 +51,7 @@ export const RandomQuote = () => {
 						<img
 							src={twitter}
 							onClick={() => {
-								shareTwitter();
+								tweetQuote();
 							}}
 							alt=""
 						/>
