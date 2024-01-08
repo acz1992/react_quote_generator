@@ -58,8 +58,10 @@ export const RandomQuote = () => {
 
 		const { quote, author = "Unknown", source } = randomQuoteResult;
 
-		setQuote({ quote, author, source });
-		setLoading(false);
+		setTimeout(() => {
+			setQuote({ quote, author, source });
+			setLoading(false);
+		}, 300);
 	};
 
 	const tweetQuote = () => {
@@ -69,21 +71,6 @@ export const RandomQuote = () => {
 			)}`
 		);
 	};
-
-	/* const generateRandomColourNumber = () => Math.floor(Math.random() * 255);
-
-	const generateRandomColourCode = () => {
-		const r = generateRandomColourNumber();
-		const g = generateRandomColourNumber();
-		const b = generateRandomColourNumber();
-
-		return { r, g, b };
-	};
-
-	const setRandomBackgroundColour = () => {
-		const { r, g, b } = generateRandomColourCode();
-		document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
-	}; */
 
 	useEffect(() => {
 		updatePageWithQuote();

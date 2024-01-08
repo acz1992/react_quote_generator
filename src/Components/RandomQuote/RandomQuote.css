@@ -42,6 +42,14 @@
 	gap: 40px;
 }
 
+.loading {
+	margin: auto;
+	padding: 50px;
+	color: white;
+	font-size: larger;
+	font-weight: 600;
+}
+
 .icons img {
 	cursor: pointer;
 	height: 36px;
