@@ -96,22 +96,17 @@ export const RandomQuote = () => {
 			) : (
 				<div>
 					<div className="quote">{quote.quote}</div>
-					<div>
-						<div className="line"></div>
-						<div className="bottom">
-							<div className="author">- {quote.author}</div>
-							<div className="icons">
-								<img
-									onClick={updatePageWithQuote}
-									src={rotate}
-									alt=""
-								/>
-								<img
-									onClick={tweetQuote}
-									src={twitter}
-									alt=""
-								/>
-							</div>
+
+					<div className="line"></div>
+					<div className="bottom">
+						<div className="author">- {quote.author}</div>
+						<div className="icons">
+							<img
+								onClick={updatePageWithQuote}
+								src={rotate}
+								alt=""
+							/>
+							<img onClick={tweetQuote} src={twitter} alt="" />
 						</div>
 					</div>
 				</div>
